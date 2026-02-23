@@ -1,0 +1,106 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: babydoll;
+      color: #f6b8e1;
+     
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f2f2f2;
+      background-image: url('https://soapbubbleseal.net/sgt_0505.gif');
+    }
+    .center-box {
+      width: 80vw;
+      height: 85vh;
+      background: white;
+      background-image: url(https://bettysgraphics.neocities.org/images/backgrounds/pattern%20593.gif);
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+  
+    .top-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px 10px;
+      border-bottom: 1px solid #ddd;
+      background:#4169e1;
+    }
+
+    .nav-item {
+      text-align: center;
+      text-decoration: none;
+      color: #f6b8e1;
+      font-size: 14px;
+    }
+
+    .nav-item img {
+      width: 48px;
+      height: 48px;
+      display: block;
+      margin: 0 auto 6px;
+    }
+
+   
+    .content {
+      flex: 1;
+      padding: 20px;
+      overflow: scroll;
+    }
+    #h2{
+        text-align: center;
+        font-size: 45px;
+    }
+    .main{
+      width: 75vw;
+      height: 80vh;
+      background: white;
+      border-radius: 8px;
+      border: 10px solid #4169e1;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      overflow: scroll;
+      margin-top: 12px
+    }
+
+    .main p{
+        font-size: 30px;
+        margin-top: 15px
+  
+    }
+.main h3{
+  text-decoration: underline;
+  font-size: 40px;
+  margin-top: 15px
+}
+    /* Skew */
+.hvr-skew {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-skew:hover, .hvr-skew:focus, .hvr-skew:active {
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
+
+mark {
+  background-color: rgb(255, 255, 255);
+}
