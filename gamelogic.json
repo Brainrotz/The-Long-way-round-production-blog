@@ -1,0 +1,312 @@
+{
+  "title": "Code and Programming",
+  "sections": [
+    {
+      "text": "<mark>This part of the Blog will go through the code and logic used to create 'The Long Way Round'</mark>.<br><br>The Godot game engine uses its own Language GDScript, which is syntactically similar to Python.<br><br> Example code snippet:",
+      "images": [
+        {
+          "src": "finimg/gdexample1.png",
+          "alt": "Screenshot of code",
+          "caption": "Example GDScript code"
+        }
+      ],
+      "links": [
+        {
+          "text": "GDScript Documentation",
+          "url": "https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html"
+        }
+      ]
+    },
+    {
+      "text": "<mark>Start Menu</mark>",
+      "images": [
+        {
+          "src": "finimg/startmenudraft.png",
+          "alt": "Menu sketch",
+          "caption": "Start Menu Sketch."
+        },
+        {
+          "src": "finimg/startinspo.png",
+          "alt": "Menu sketch",
+          "caption": "The start menu takes strong inspiration from PlayStation 1 era games like Silent Hill and Tekken. I was particularly interested in their minimal design approach, where menus are stripped back to just the essentials, typically the game title and basic options like start and quit. I chose to follow this style to keep the interface simple, readable, and nostalgic, while also ensuring the player can navigate it quickly and intuitively."
+        },
+        {
+          "src": "finimg/startmenu1.png",
+          "alt": "Menu sketch",
+          "caption": "Start Menu Final w/o easy mode secret option:"
+        },
+        {
+          "src": "finimg/startmenu2.png",
+          "alt": "Menu sketch",
+          "caption": "Start Menu Code:"
+        },
+        {
+          "src": "finimg/startcode.png",
+          "alt": "Menu sketch",
+          "caption": "<mark>Code breakdown:</mark><br><br>This script controls the functionality of the game’s start menu using GDScript, attached to a Control node in the Godot engine.<br><br>When the scene loads, the _ready() function connects button signals (such as pressed and mouse_entered) to custom handler functions, allowing the menu to respond to user interaction.<br><br>When the Start button is clicked, a click sound effect is played and a “flash” animation is triggered via the AnimationPlayer.<br><br> The script then waits for the animation to finish using await, ensuring a smooth transition before changing to the intro scene with SceneTransition.change_scene(). If the Quit button is pressed, a sound plays and the game closes using get_tree().quit(). Additionally, hovering over either button triggers a hover sound effect, providing audio feedback and improving the user experience."
+        }
+      ]
+    },
+    {
+      "text": "<mark>Start Screen Video</mark>",
+      "videos": [
+        {
+          "embed": "https://www.youtube.com/embed/ANu-EPHYxUI?si=DJ2LZNdyaDyTpZQg",
+          "caption": "Video Demonstration of how the Start menu works.<br><br>This demo video includes non copyright free music which has been replaced in the final game"
+        }
+      ],
+      "links": [
+        {
+          "text": "Shader Link",
+          "url": " https://godotshaders.com/shader/warped-fractal-noise/"
+        },
+         {
+          "text": "Font",
+          "url": "https://somepx.itch.io/pixel-font-awesome"
+        },
+         {
+          "text": "Final Start Menu music",
+          "url": "https://freesound.org/people/magmadiverrr/sounds/661248/ "
+        },
+         {
+          "text": "Final Start Menu Hover sound effect",
+          "url": "https://freesound.org/people/plasterbrain/sounds/237422/ "
+        },
+           {
+          "text": "Final Start Menu start sound effect",
+          "url": "https://freesound.org/people/plasterbrain/sounds/243020/"
+        }
+      ]
+    },
+    {
+      "text": "<mark>Opening Scene</mark>",
+      "images": [
+        {
+          "src": "finimg/intro1.png",
+          "alt": "Movement test",
+          "caption": "The intro scene is based on Embassy Gardens. Before designing the final background, I used a stock image of the area as a stand-in during development.<br><br>This is where the visual novel style comes into play. I chose a minimal text box design, loosely inspired by Undertale, featuring a classic black-and-white aesthetic for clarity and readability."
+        }
+      ]
+    },
+    {
+      "text": "<mark>Opening Scene Code breakdown:</mark>",
+      "images": [
+        {
+          "src": "finimg/opcode1.png",
+          "alt": "Movement test",
+          "caption": "This script manages a simple dialogue system in Godot. It cycles through lines of text stored in an array and displays them using a typewriter effect. When the scene starts, the first line is shown, and each line is revealed gradually while playing a sound effect."
+        },
+            {
+      "src": "finimg/opcode2.png",
+      "alt": "Second code example",
+      "caption": "This part of the script controls how the dialogue is displayed and how the player interacts with it. The type_text() function is responsible for creating the typewriter effect. It loops through each character in the current line of dialogue (full_text) and gradually builds the visible text by adding one character at a time to current_text. After each character is added, the label is updated and the script waits briefly using await and a timer, which creates the animated typing effect.<br><br>While the text is being revealed, the script checks whether is_typing is still true. If it has been set to false, the function immediately stops typing and also stops the dialogue sound. Once the entire line has been displayed, is_typing is set to false, a hint is made visible to prompt the player, and the sound effect is stopped.<br><br>The _input(event) function handles player interaction. It listens for either a keyboard input (such as pressing the key mapped to ui_accept) or a mouse click. If the player provides input while the text is still typing, the typing effect is skipped and the full line of dialogue is instantly displayed. The sound effect is stopped and the hint becomes visible. If the player presses input after the line has finished displaying, the script moves on to the next line by calling next_line<br><br>The next_line() function advances the dialogue by increasing the dialogue_index. If there are still lines remaining in the dialogue array, it calls show_line() to display the next one. If all lines have been shown, the script stops the dialogue sound and transitions to a new scene using SceneTransition.change_scene()"
+    }
+      ]
+    },
+  {
+  "text": "<mark>Final Opening Scene presentation</mark>",
+  "images": [
+    {
+      "src": "finimg/intro.jpg",
+      "alt": "Movement test",
+      "caption": "Final Opening Scene."
+    },
+      {
+      "src": "finimg/intro2.png",
+      "alt": "Movement test",
+      "caption": "Final Opening Scene."
+    }
+  ]
+},
+{
+  "text": "<mark>Opening Scene Video</mark>",
+  "videos": [
+    {
+      "embed": "https://www.youtube.com/embed/dyowmgiA948?si=AVF59DbTc88qAAnU",
+      "caption": ""
+    }
+  ],
+  "links": [
+    {
+      "text": "Dialouge Sound",
+      "url": "https://freesound.org/people/malakme/sounds/468927/"
+    }
+  ]
+},
+{
+  "text": "<mark>Concierge Demo Scene</mark>",
+  "images": [
+    {
+      "src": "finimg/con4.png",
+      "alt": "Movement test",
+      "caption": "I initially used a free office background as a placeholder to better approximate the final look of the scene. This also helped me experiment with the placement of the character and text box, as well as understand how much of the background would be obscured during gameplay."
+    }
+  ]
+},
+{
+  "text": "<mark>Final Concierge Scene</mark>",
+  "images": [
+    {
+      "src": "finimg/con1.png",
+      "alt": "Movement test",
+      "caption": "Concierge screen grab. The background was illustrated by a friend and fellow artist, Calix Borrero-Diaz. The colours were slightly desaturated to help the character stand out more clearly. The overall colour palette is intentionally brighter to create a strong contrast with the ‘Poor Door’ entrance area."
+    }
+  ]
+},
+{
+  "text": "<mark>Concierge Scene Final Background</mark>",
+  "images": [
+    {
+      "src": "finimg/con2.jpeg",
+      "alt": "Movement test",
+      "caption": "The finished background drawing"
+    }
+  ]
+},
+{
+  "text": "<mark>Concierge Scene sketch</mark>",
+  "images": [
+    {
+      "src": "finimg/consketch.jpg",
+      "alt": "Movement test",
+      "caption": "Background drawing sketch"
+    }
+  ]
+},
+{
+  "text": "<mark>Concierge Scene</mark>",
+  "images": [
+    {
+      "src": "finimg/con3.gif",
+      "alt": "Movement test",
+      "caption": "Concierge Character drawing"
+    }
+  ]
+},
+{
+  "text": "<mark>Concierge Code Breakdown</mark>",
+  "images": [
+    {
+      "src": "finimg/concode1.png",
+      "alt": "Movement test",
+      "caption": "This section sets up the core of the dialogue system. The script extends a Control node, meaning it manages UI elements like the text box. The dialogue array stores each line as an object with both text and a type (player, NPC, or description), allowing different speakers to be styled differently.<br><br>The remaining variables control how the dialogue is displayed. dialogue_index tracks the current line, while full_text and current_text are used to create the typewriter effect. is_typing determines whether the text is still appearing, and typing_speed controls how fast it displays. current_color changes the text colour based on the speaker, and using_sound2 is used to switch between different sound effects during certain lines.<br><br>"
+    },
+     {
+      "src": "finimg/concode2.png",
+      "alt": "Movement test",
+      "caption": "This part of the script handles the setup and display of each dialogue line. When the scene starts, the ready function hides the hint and character, sets the character animation to idle, and enables BBCode on the dialogue label so coloured text can be used. It then begins the dialogue sequence.<br><br>The start function resets the dialogue index and calls the function responsible for showing the current line. The show_line function reads the current entry from the dialogue array and checks the speaker type. Based on whether the line is narration, player dialogue, or NPC dialogue, it assigns a different text colour to visually distinguish who is speaking.<br><br>It then prepares the text for display by storing the full line, clearing the current visible text, and enabling the typing effect. The dialogue label is cleared, the hint is hidden, and sound settings are reset so the next line can be displayed cleanly.<br><br>"
+    },
+        {
+      "src": "finimg/concode3.png",
+      "alt": "Movement test",
+      "caption": "This section controls the audio and character behaviour for each line of dialogue. At the start, both sound effects are stopped to ensure there is no overlap from previous lines. The script then checks the current position in the dialogue and, for specific lines, switches to an alternate sound effect. For all other lines, the default dialogue sound is played, allowing for variation in audio during key moments.<br><br>The script also controls the visibility of the character sprite. Once the dialogue progresses past the first line, the character becomes visible and plays an idle animation. Before that point, the character remains hidden. This helps introduce the character gradually rather than showing them immediately.<br><br>he typewriter effect is then triggered to begin displaying the text.The set dialogue text function updates what is shown on screen. It clears the label and applies coloured formatting based on the current speaker, allowing the dialogue to visually distinguish between different characters.<br><br>"
+    },
+     {
+      "src": "finimg/concode4.png",
+      "alt": "Movement test",
+      "caption": "This section handles the typewriter effect and player input. The type_text function gradually displays each line by looping through every character in the full text and adding it one at a time to the visible string. After each character is added, the label is updated and a short delay is applied, creating the typing animation. If typing is interrupted, the function immediately stops and prevents further characters from being added. Once the full line has finished displaying, typing is disabled, the hint becomes visible, and the default dialogue sound stops unless an alternate sound is being used.<br><br>The input function allows the player to interact with the dialogue. If the player presses a key or clicks while the text is still typing, the effect is skipped and the full line is instantly shown. If the text has already finished displaying, the input advances the dialogue to the next line.<br><br>"
+    },
+    {
+      "src": "finimg/concode5.png",
+      "alt": "Movement test",
+      "caption": "This function controls how the dialogue progresses. It increases the dialogue index to move to the next line in the sequence. If there are still lines remaining, it calls the function that displays the next piece of dialogue.<br><br>Once all dialogue has been completed, both sound effects are stopped and the game transitions to a new scene. This marks the end of the conversation and smoothly moves the player forward into the 3d walking simulator part of the game.<br><br>"
+    }
+  ]
+},
+
+{
+  "text": "<mark>Concierge Scene</mark>",
+  "videos": [
+    {
+      "embed": "https://www.youtube.com/embed/chri8v9xj8I?si=xfIzsQjCwN-jHae4",
+      "caption": ""
+    }
+  ],  
+  "links": [
+    {
+      "text": "Dialouge Sound",
+      "url": "https://freesound.org/people/malakme/sounds/468927/"
+    },
+    {
+      "text": "Awkward sound effect",
+      "url": "https://freesound.org/people/plasterbrain/sounds/395502/ "
+    }
+  ]
+},
+ {
+      "text": "<mark>Encounter 1</mark>",
+      "images": [
+        {
+          "src": "finimg/ec14.png",
+          "alt": "Menu sketch",
+          "caption": "Encounter 1 first presentation"
+        },
+        {
+          "src": "finimg/ec1bg.jpeg",
+          "alt": "Menu sketch",
+          "caption": "Background Sketch"
+        },
+        {
+          "src": "finimg/ec1.png",
+          "alt": "Menu sketch",
+          "caption": "Final Encounter 1 presentation"
+        },
+        {
+          "src": "finimg/ec1demo.png",
+          "alt": "Menu sketch",
+          "caption": "Encounter 1 logic demo"
+        },
+          {
+          "src": "finimg/ec1demo2.png",
+          "alt": "Menu sketch",
+          "caption": "Encounter 1 logic demo"
+        }
+      ]
+    },
+      {
+  "text": "<mark>Concierge Code Breakdown</mark>",
+  "images": [
+    {
+      "src": "finimg/ec1code.png",
+      "alt": "Movement test",
+      "caption": "This section sets up the structure for a visual novel encounter that has two different phases. The game state controls whether the player is currently seeing the introduction dialogue before the mini-game, or the outro dialogue after the mini-game has finished.<br><br>The intro dialogue introduces the strange character and sets up the higher or lower card game encounter. The outro dialogue is used after the mini-game, continuing the scene and wrapping up the interaction. The dialogue index tracks which line is currently being shown, while current dialogue stores whichever dialogue list is active at that moment."
+    },
+     {
+      "src": "finimg/ec1code2.png",
+      "alt": "Movement test",
+      "caption": "This section controls the setup for the dialogue system. The variables manage the typing effect, including the full line of text, the part currently visible, the text colour, and the speed of the typewriter animation.<br><br>When the scene starts, the mouse is made visible, the dialogue box is shown, and the hint is hidden. The script then checks whether the player has just returned from the card game. If they have, it starts the outro dialogue. If not, it starts the intro dialogue. The start_vn function sets the current state, loads the correct dialogue list, resets the dialogue index, and begins showing the first line."
+    },
+    {
+      "src": "finimg/ec1code3.png",
+      "alt": "Movement test",
+      "caption": "This section handles displaying each line of dialogue and creating the typewriter effect. The function retrieves the current line from the active dialogue list and checks the speaker type to assign a specific text colour, helping distinguish between narration, the player, and the NPC.<br><br>It then prepares the text by storing the full line, clearing what is currently visible, and enabling the typing effect. The dialogue label is reset, the hint is hidden, and a prompt is set to indicate how the player can continue. If a sound node is present, the typing sound is restarted for the new line.<br><br>The type_text function gradually reveals the dialogue one character at a time, updating the label with coloured text and adding a short delay between each character. If the typing is interrupted, the sound stops and the function exits early. Once the full line has been displayed, typing ends and the hint becomes visible again.<br><br>"
+    },
+      {
+      "src": "finimg/ec1code4.png",
+      "alt": "Movement test",
+      "caption": "This section manages how the dialogue progresses and how the player interacts with it. The advance function moves to the next line by increasing the dialogue index. If there are still lines remaining, it displays the next one. When all dialogue has been completed, the script stops the sound and transitions to a new scene. If the current state is the intro, the player is sent to the card mini-game. If it is the outro, the game returns to the main scene and updates a global flag to show the encounter has finished<br><br>The input function listens for player interaction through a key press or mouse click. If the player presses input while the text is still typing, the typewriter effect is skipped and the full line is instantly displayed. If the text has already finished, the input advances the dialogue to the next line, allowing the player to control the pacing of the conversation."
+    }
+  ]
+    },
+    {
+      "text": "<mark>Card mini game</mark>",
+      "images": [
+        {
+          "src": "finimg/card.png",
+          "alt": "Menu sketch",
+          "caption": "Encounter 1 first presentation"
+        },
+        {
+          "src": "finimg/card2.png",
+          "alt": "Menu sketch",
+          "caption": "Background Sketch"
+        },
+           {
+          "src": "finimg/card3.png",
+          "alt": "Menu sketch",
+          "caption": "Background Sketch"
+        }
+      ]
+      }
+  ]
+}

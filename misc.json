@@ -1,0 +1,17 @@
+{
+  "title": "Misc",
+  "sections": [
+    {
+      "text": "Design,Inspiration and planning.",
+      "image": "finimg/sh1.jpg",
+      "alt": "Screenshot from Silent Hill 2 (2001) on the PS2",
+      "caption": "The main stylistic inspiration behind this project was PSX, which refers to the low-poly, pixelated, and blocky 3D aesthetic of early Sony PlayStation games. It is popular in indie game development, particularly horror, for its nostalgia, relatively easy production in software like Blender, and distinctive visual quirks like vertex snapping, wobbly textures, and low-resolution textures "
+    },
+    {
+      "text": "I also tested movement scripts.",
+      "image": "finimg/example2.png",
+      "alt": "Movement test",
+      "caption": "Early movement prototype"
+    }
+  ]
+}

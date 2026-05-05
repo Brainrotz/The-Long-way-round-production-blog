@@ -1,0 +1,17 @@
+{
+  "title": "Resources",
+  "sections": [
+    {
+      "text": "This is my first coding note.",
+      "image": "finimg/example1.png",
+      "alt": "Screenshot of code",
+      "caption": "Experimenting with dialogue logic"
+    },
+    {
+      "text": "I also tested movement scripts.",
+      "image": "finimg/example2.png",
+      "alt": "Movement test",
+      "caption": "Early movement prototype"
+    }
+  ]
+}

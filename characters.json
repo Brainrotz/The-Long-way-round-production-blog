@@ -1,0 +1,23 @@
+{
+  "title": "Assets",
+  "sections": [
+    {
+      "text": "3D Assets.",
+      "image": "finimg/example1.png",
+      "alt": "Screenshot of code",
+      "caption": "Experimenting with dialogue logic"
+    },
+    {
+      "text": "Character Assets",
+      "image": "finimg/example2.png",
+      "alt": "Movement test",
+      "caption": "Early movement prototype"
+    },
+    {
+      "text": "Background Assets",
+      "image": "finimg/example2.png",
+      "alt": "Movement test",
+      "caption": "Early movement prototype"
+    }
+  ]
+}

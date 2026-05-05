@@ -1,54 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fin.css">
-    <style>
-    @font-face{
-        font-family:'spirit';
-src:url('https://dl.dropbox.com/scl/fi/bqitfm4rr6tfgt3ea2jrq/Spirit.ttf?rlkey=r8hrj9c01d3cmv2iqt3vxm9tp&dl=0');
-}
-</style>
-    <title>The Long Way Round Proudction Blog
-    </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fin.css">
+  <style>
+    @font-face {
+      font-family: 'BabyDoll';
+      src: url(https://dl.dropbox.com/s/9km22ye44mczizy/BabyDoll.ttf);
+    }
+  </style>
+  <title>The Long Way Round Production Blog</title>
 </head>
 <body>
-    <div class="center-box">
+  <div class="center-box">
 
-   <nav class="top-nav">
-  <a href="#" class="nav-item hvr-skew" data-page="home">
-    <img src="finimg/star.gif" alt="Home">
-    Home
-  </a>
+    <nav class="top-nav">
+      <a href="#" class="nav-item hvr-skew" data-page="home">
+        <img src="finimg/star.gif" alt="Home">
+        Home
+      </a>
 
-  <a href="#" class="nav-item hvr-skew" data-page="PICO-8">
-    <img src="finimg/cards.gif" alt="PICO-8">
-    Project research
-  </a>
+      <a href="#" class="nav-item hvr-skew" data-page="gamelogic">
+        <img src="finimg/cards.gif" alt="Code">
+        Code and Programming
+      </a>
 
-  <a href="#" class="nav-item hvr-skew" data-page="Characters">
-    <img src="finimg/dice.gif" alt="Characters and Assets">
-    Gameplay research
-  </a>
-  <a href="#" class="nav-item hvr-skew" data-page="Resources">
-    <img src="finimg/lighter.gif" alt="Resources">
-    Scrapped ideas
-  </a>
+      <a href="#" class="nav-item hvr-skew" data-page="characters">
+        <img src="finimg/dice.gif" alt="Characters and Assets">
+        Characters and Assets
+      </a>
 
-  <a href="#" class="nav-item hvr-skew" data-page="Misc">
-    <img src="finimg/sculpture.gif" alt="Misc">
-    StoryBoarding and planning
-  </a>
-</nav>
+      <a href="#" class="nav-item hvr-skew" data-page="resources">
+        <img src="finimg/lighter.gif" alt="Resources">
+        Resources
+      </a>
+
+      <a href="#" class="nav-item hvr-skew" data-page="misc">
+        <img src="finimg/sculpture.gif" alt="MISC">
+        Misc
+      </a>
+    </nav>
 
     <div class="content">
-        <div class="title">
-      <h2 id="h2"><mark>The Long Way Round: Production blog</mark></h2>
+      <div class="title">
+        <h2 id="h2"><mark>The Long Way Round: Production Blog</mark></h2>
       </div>
-     <div class="main" id="main-content">
-      </div>
+      <div class="main" id="main-content"></div>
     </div>
   </div>
+
+  <script>
+    const main = document.getElementById("main-content");
+    const title = document.getElementById("h2");
+    const navItems = document.querySelectorAll(".nav-item");
+
+    const pageFiles = {
+      home: "home.json",
+      gamelogic: "gamelogic.json",
+      characters: "characters.json",
+      resources: "resources.json",
+      misc: "misc.json"
+    };
+
+    function renderPage(data) {
+      title.innerHTML = `<mark>${data.title || "Untitled Page"}</mark>`;
+
+      if (!data.sections || !Array.isArray(data.sections)) {
+        main.innerHTML = "<p>No content found.</p>";
+        return;
+      }
+
+      main.innerHTML = data.sections.map(section => {
+        let images = [];
+        let videos = [];
+        let links = [];
+
+        if (Array.isArray(section.images)) {
+          images = section.images;
+        } else if (section.image) {
+          images = [
+            {
+              src: section.image,
+              alt: section.alt || "",
+              caption: section.caption || ""
+            }
+          ];
+        }
+
+        if (Array.isArray(section.videos)) {
+          videos = section.videos;
+        } else if (section.video) {
+          videos = [
+            {
+              src: section.video,
+              caption: section.videoCaption || ""
+            }
+          ];
+        }
+
+        if (Array.isArray(section.links)) {
+          links = section.links;
+        } else if (section.link) {
+          links = [
+            {
+              text: section.linkText || "Open link",
+              url: section.link
+            }
+          ];
+        }
+
+        const imagesHtml = images.length
+          ? `<div class="image-gallery">
+              ${images.map(img => `
+                <div class="image-block">
+                  <img src="${img.src}" alt="${img.alt || ""}">
+                  ${img.caption ? `<p class="caption">${img.caption}</p>` : ""}
+                </div>
+              `).join("")}
+            </div>`
+          : "";
+
+        const videosHtml = videos.length
+          ? `<div class="video-gallery">
+              ${videos.map(video => `
+                <div class="video-block">
+                  ${
+                    video.embed
+                      ? `<iframe
+                          src="${video.embed}"
+                          title="${video.title || "Embedded video"}"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen>
+                        </iframe>`
+                      : `<video controls>
+                          <source src="${video.src}" type="${video.type || "video/mp4"}">
+                          Your browser does not support the video tag.
+                        </video>`
+                  }
+                  ${video.caption ? `<p class="caption">${video.caption}</p>` : ""}
+                </div>
+              `).join("")}
+            </div>`
+          : "";
+
+        const linksHtml = links.length
+          ? `<div class="links">
+              ${links.map(link => `
+                <p>
+                  <a href="${link.url}" target="_blank" rel="noopener noreferrer">
+                    ${link.text || link.url}
+                  </a>
+                </p>
+              `).join("")}
+            </div>`
+          : "";
+
+        return `
+          <div class="section">
+            ${section.text ? `<p>${section.text}</p><br>` : ""}
+            ${imagesHtml}
+            ${videosHtml}
+            ${linksHtml}
+          </div>
+        `;
+      }).join("");
+    }
+
+    async function loadPage(pageKey) {
+      const file = pageFiles[pageKey];
+
+      if (!file) {
+        main.innerHTML = "<p>Page not found.</p>";
+        return;
+      }
+
+      try {
+        const response = await fetch(file);
+
+        if (!response.ok) {
+          throw new Error(`Could not load ${file}`);
+        }
+
+        const data = await response.json();
+        renderPage(data);
+      } catch (error) {
+        console.error(error);
+        main.innerHTML = `<p>Error loading page: ${error.message}</p>`;
+      }
+    }
+
+    navItems.forEach(item => {
+      item.addEventListener("click", e => {
+        e.preventDefault();
+        const pageKey = item.dataset.page;
+        loadPage(pageKey);
+      });
+    });
+
+    loadPage("home");
+  </script>
 </body>
 </html>

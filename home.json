@@ -1,0 +1,40 @@
+{
+  "title": "The Long Way Round development blog",
+  "sections": [
+    {
+      "text": "<mark>Project Overview</mark>",
+      "images": [
+        {
+          "src": "finimg/example1.png",
+          "alt": "Screenshot of code",
+          "caption": "Experimenting with dialogue logic"
+        }
+      ],
+      "links": [
+        {
+          "text": "Project Git Repository",
+          "url": "https://github.com/Brainrotz/The-Long-way-round"
+        }
+      ]
+    },
+    {
+      "text": "<mark>Development Progress</mark><br><br>Transitioning from PICO-8 to Godot.",
+      "images": [
+        {
+          "src": "finimg/example2.png",
+          "alt": "Movement test",
+          "caption": "Early movement prototype"
+        }
+      ]
+    },
+    {
+      "text": "<mark>Demo Video</mark>",
+      "videos": [
+        {
+          "embed": "https://www.youtube.com/embed/ANu-EPHYxUI",
+          "caption": "Early gameplay demonstration of The Long Way Round."
+        }
+      ]
+    }
+  ]
+}
