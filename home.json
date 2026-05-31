@@ -5,9 +5,9 @@
       "text": "<mark>Project Overview</mark>",
       "images": [
         {
-          "src": "finimg/example1.png",
+          "src": "finimg/menu.png",
           "alt": "Screenshot of code",
-          "caption": "Experimenting with dialogue logic"
+          "caption": "The Long Way Round is a satirical walking simulator that explores class segregation within urban housing, using humour and exaggeration to critique real-world inequalities. The core idea centres around the concept of “poor doors,” a practice in some London developments where residents of affordable housing are required to use separate, often less desirable entrances than those in private units.<br><br>The project draws directly from my personal lived experience navigating London’s housing environment, where subtle but persistent reminders of inequality are embedded into everyday spaces. These experiences shaped the decision to create a game that exaggerates these dynamics, transforming them into overt and surreal encounters that make the underlying systems more visible and uncomfortable.<br><Br>Satire is used as a primary tool to both engage the player and critique these systems. By presenting absurd characters, illogical “tests” and arbitrary barriers to entering one’s own home, the game reflects the often-irrational nature of bureaucratic and social gatekeeping. Exaggeration allows the player to experience these frustrations in a condensed and heightened form, making the critique more immediate and impactful.<br><br>The intended player experience is one of mild inconvenience that gradually escalates into frustration and disbelief. Players are repeatedly prevented from completing a simple task, reaching their front door, through interactions that feel unnecessary and deliberately obstructive. This design aims to mirror, in a stylised way, the real-world obstacles faced by individuals navigating unequal systems, encouraging reflection through discomfort and absurdity."
         }
       ],
       "links": [
@@ -17,22 +17,264 @@
         }
       ]
     },
-    {
-      "text": "<mark>Development Progress</mark><br><br>Transitioning from PICO-8 to Godot.",
-      "images": [
+      {
+      "text": "<mark>The Long Way Round presentation video</mark>",
+      "videos": [
         {
-          "src": "finimg/example2.png",
-          "alt": "Movement test",
-          "caption": "Early movement prototype"
+          "embed": "https://www.youtube.com/embed/Q5ruIhuYtGo?si=GpFr_mUIafGPvIGV",
+          "caption": ""
         }
       ]
     },
     {
-      "text": "<mark>Demo Video</mark>",
+      "text": "<mark>Development Progress</mark><br><br><u>Transitioning from PICO-8 to Godot:</u>",
+      "images": [
+        {
+        "src":"",
+        "alt":"",
+        "caption":"The original medium for this project was PICO-8, a fantasy console designed for creating small retro-style games within strict creative limitations, including a fixed resolution, limited colour palette, and built-in tools for coding, graphics, sound, and music (Lexaloffle, n.d.). I was initially interested in PICO-8 because of its distinctive visual style and the way its restrictions can encourage creative problem-solving. However, as The Long Way Round developed, it became clear that PICO-8 was too stylised and technically restrictive for the type of experience I wanted to create.<br><br>The project required a structure that could move between walking simulator gameplay, visual novel-style dialogue scenes and mini-game interactions. In PICO-8, even relatively simple actions, such as transitioning from a walking section into a dialogue encounter, became more complicated than expected due to its limited scene management and interface tools."
+        }
+      ]
+    },
+     {
+      "text": "<mark>PICO-8 walking demo</mark>",
       "videos": [
         {
-          "embed": "https://www.youtube.com/embed/ANu-EPHYxUI",
+          "embed": "https://www.youtube.com/embed/FeNfURcmM0M?si=PJQsKFmq-bekMDCJ",
           "caption": "Early gameplay demonstration of The Long Way Round."
+        }
+      ]
+    },
+    {
+      "text": "<mark>Some images from my first attempt on PICO-8</u>",
+      "images": [
+        {
+        "src":"finimg/pico-8.png",
+        "alt":"",
+        "caption":""
+        },
+         {
+        "src":"finimg/pico-81.png",
+        "alt":"",
+        "caption":""
+        }
+      ]
+    },
+    {
+      "text": "<mark>More pico-8 demos</mark>",
+      "videos": [
+        {
+          "embed": "https://www.youtube.com/embed/S-jCNHkb8iY?si=de3HW-ygTBK6rbnX",
+          "caption": ""
+        }
+      ]
+    }, 
+    {
+      "text": "<mark>The Long Way Round Gameplay Video</mark>",
+      "videos": [
+        {
+          "embed": "https://www.youtube.com/embed/54MzprEDa9w?si=xdj09uJchPe0XGko",
+          "caption": "Early gameplay demonstration of The Long Way Round."
+        }
+      ]
+    },
+    {
+      "text": "<mark>Physical set-up</mark>",
+      "videos": [
+        {
+          "embed": "https://www.youtube.com/embed/9TGupbIoIKc?si=LCmmn1Kq-Hc8Lt7L",
+          "caption": "The Long Way Round on TV"
+        }
+      ]
+    },
+    {
+      "text": "<mark>Physical set up pictures</mark>",
+      "images": [
+        {
+        "src":"finimg/irl.jpg",
+        "alt":"",
+        "caption":"During the final presentation, the AV4 signal text would not disappear from the television screen. Although this was unintentional, I decided to leave it because it added to the overall presentation. The visible input label made the setup feel more like an old domestic television display, supporting the slightly awkward, imperfect, and low-tech aesthetic of the project. Rather than disrupting the work, the bug reinforced the feeling of inconvenience and imperfection that runs throughout the game."
+        },
+         {
+        "src":"finimg/irl1.jpg",
+        "alt":"",
+        "caption":""
+        },
+         {
+        "src":"finimg/irl2.jpg",
+        "alt":"",
+        "caption":""
+        },
+         {
+        "src":"finimg/irl3.jpg",
+        "alt":"",
+        "caption":"I initially ran the game from my laptop because the SD card intended for the Raspberry Pi became corrupted. This temporarily affected the physical setup, but I was later able to replace the SD card, install Raspberry Pi OS, and launch the game through the Raspberry Pi as originally planned."
+        }
+      ]
+    },
+     {
+      "text": "<mark>Raspberry Pi Set up</mark>",
+      "images": [
+          {
+        "src":"finimg/irl4.jpg",
+        "alt":"",
+        "caption":""
+        },
+           {
+        "src":"finimg/raspi.jpg",
+        "alt":"",
+        "caption":"I used a 64-bit Raspberry Pi 5 for this project because it offered the strongest performance available to me and was the most suitable option for running the game as a lightweight installation. However, even with this hardware, I still experienced rendering issues during the 3D sections, which highlighted the need to keep the environment, visual effects, and assets as optimised as possible."
+        },
+                  {
+        "src":"finimg/error.jpg",
+        "alt":"",
+        "caption":""
+        },
+                  {
+        "src":"finimg/error2.jpg",
+        "alt":"",
+        "caption":""
+        },
+                  {
+        "src":"finimg/error3.jpg",
+        "alt":"",
+        "caption":"When exporting my Godot game to run on the Raspberry Pi 5, I encountered several issues caused by file permissions, mismatched file names, display settings, and renderer compatibility. At first, the exported .arm64 file would not run because Linux did not treat it as an executable, so I had to use chmod +x to give it permission to launch. I also renamed the executable at one point, which caused Godot to fail because the .pck data file must have the same base name as the executable. This was resolved by either keeping the original exported names together or making sure both files matched exactly. The game also black-screened when reaching the 3D section, which was fixed by launching it with a more compatible rendering method for the Raspberry Pi. Finally, I created a desktop launcher so the game could be opened like a normal application, making sure the launcher pointed to the correct game file and working directory."
+        },
+          {
+        "src":"finimg/controller.jpg",
+        "alt":"",
+        "caption":"Final controller choice. The retro-style design fits the project’s presentation better than a standard Xbox controller and supports the game’s older screen-based aesthetic."
+        }
+      ]
+     },
+      {
+      "text": "<mark>Raspberry Pi demo</mark>",
+      "videos": [
+        {
+          "embed": "https://www.youtube.com/embed/12B89GkyjXA?si=av_1qtuB_y6Ng-IB",
+          "caption": "The Long Way Round running off the Raspberry PI"
+        }, 
+        {
+          "embed": "https://www.youtube.com/embed/RpBhNDzhjcU?si=mKaMk483cGuJYuJC",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "text": "<mark>Scrapped physicaly set up ideas</u>",
+      "images": [
+        {
+        "src":"finimg/irlsketch.jpeg",
+        "alt":"",
+        "caption":"I briefly considered creating a custom physical setup for the project, such as 3D modelling a housing unit for the Raspberry Pi and screen. However, I decided to remove this idea because it did not add enough to the core concept of the game. I also had limited 3D modelling experience, and learning Godot, Blender, and a custom hardware build at the same time would have made the project too large for the available timeframe."
+        },
+        {
+        "src":"finimg/screen.png",
+        "alt":"",
+        "caption":"Screen options I was considering"
+        },
+         {
+        "src":"finimg/ss.png",
+        "alt":"",
+        "caption":"I also considered uploading the game to a hosting site such as itch.io for the final presentation. However, I decided against this because the physical setup felt important to the project. Presenting the game on a screen with a controller helped create a more intentional, domestic installation and made the experience feel less like a standard browser game. These Screenshots are from an itch.io game that I liked the layout of. I think in the future i would set up something similar , however in terms of the message of this project and the submission it was irrelevant."
+        }
+      ]
+    },
+     {
+      "text": "<mark>3D development</mark>",
+      "videos": [
+        {
+          "embed": "https://www.youtube.com/embed/gaMZxRi9XxQ?si=NjVMP0YR1dIRJ40U",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "text": "<mark>Early screenshots</mark>",
+      "images": [
+        {
+        "src":"finimg/3e1.png",
+        "alt":"",
+        "caption":""
+      },
+         {
+        "src":"finimg/3e2.png",
+        "alt":"",
+        "caption":""
+      }
+    ]
+  },
+    {
+      "text": "<mark>Movement development</mark>",
+      "videos": [
+        {
+          "embed": "https://www.youtube.com/embed/d1Uno7X1Qq4?si=3SNeQTo-lwiVrCo8",
+          "caption": ""
+        },
+         {
+          "embed": "https://www.youtube.com/embed/K2ws6HOqEnU?si=bJl2Qj8wRux6IiL6",
+          "caption": ""
+        },
+         {
+          "embed": "https://www.youtube.com/embed/jAl5QP3uo_Y?si=msUE-M_b8NaM0boJ",
+          "caption": "Videos of my progressivly learning how to us Godot engine and how to implement movement logic."
+        }
+      ]
+    },
+    {
+      "text": "<mark>more development screenshots</mark>",
+      "images": [
+        {
+        "src":"finimg/3e3.png",
+        "alt":"",
+        "caption":""
+      },
+        {
+        "src":"finimg/3e4.png",
+        "alt":"",
+        "caption":""
+      },
+        {
+        "src":"finimg/3e5.png",
+        "alt":"",
+        "caption":"The fog was originally added during an earlier stage of development, when the project was leaning more towards a mundane horror atmosphere. I was trying to replicate the sense of unease and ambience found in games such as Silent Hill. Although the project later shifted away from horror and became more satirical, I decided to keep the fog in the final version. It still helped create a sense of discomfort and uncertainty, while also making the environment feel slightly surreal and oppressive. In this way, the fog became less about horror and more about supporting the game’s awkward, unsettling tone."
+      }
+      ]
+    },
+      {
+      "text": "<mark>Testing on MACBOOK</mark>",
+      "videos": [
+        {
+          "embed": "https://www.youtube.com/embed/5i_-_PS8BdA?si=C7s12H9gctJLmVfa",
+          "caption": "Although the game was developed on Windows and is intended to run on Linux on a Raspberry Pi, I wanted to include playable game files as part of my submission. I was reminded that MacBooks are commonly used, so I borrowed friends’ MacBooks and sent them the exported files to test whether the game would run correctly. Thankfully, the Mac version worked, although I did need to adjust some texture rendering settings to enable gameplay on macOS. This playtesting also reinforced that controller support would make the game more intuitive, as one player immediately tried using the arrow keys while another used WASD. A controller would create a more consistent input method and make the gameplay experience clearer for players."
+        },
+         {
+          "embed": "https://www.youtube.com/embed/utkozUzELmk",
+          "caption":"Another gameplay video on Macbook"
+         }
+      ]
+    },
+     {
+      "text": "<mark>Time management</mark>",
+      "images": [
+        {
+        "src":"finimg/smart.png",
+        "alt":"",
+        "caption":"Looking back at my SMART goals, the project changed significantly during development, but it still achieved its wider purpose. My original specific goal was to create a walking simulator in PICO-8 using Lua, with a focus on a retro-inspired style and a small-scale playable experience. This goal was not fully met because the project moved away from PICO-8 and was instead developed in Godot. However, this change was necessary because Godot was more suitable for the scale of the project, especially for 3D exploration, collision, scene transitions, dialogue systems, and encounter triggers.<br><br>Although the measurable goal of producing a PICO-8 cartridge was not achieved, I did create a playable game with a complete journey, three main encounters, sound effects, a user interface, and a clear concept. The project still met the broader aim of creating an interactive experience that explores mixed-tenure housing, poor doors, and restricted access through gameplay. The achievable goal also changed, as I did not develop my skills in Lua as originally planned, but I did improve my understanding of Godot, 3D movement, Area3D triggers, dialogue systems, audio handling, and iterative game development.<br><br>The project remained relevant to my creative and technical development because it allowed me to combine research, personal experience, game design, and technical implementation. The time-bound goal was partly achieved, as the final outcome was completed within the project deadline, but some features had to be reduced or removed. These included extra random encounters, additional mini-games, the rat encounter, and the planned bullet hell parody for the lobster interaction. Overall, the SMART goals helped guide the project, but they also show how the final outcome adapted in response to technical challenges, time limits, and changes in creative direction."
+        },
+         {
+        "src":"finimg/moscow.png",
+        "alt":"",
+        "caption":"The MoSCoW priorities were useful for deciding what needed to be completed first and what could be reduced if the project became too large. Most of the “must-have” features were achieved. The final game includes a working walking simulator, a complete player route, three main encounters, basic sound effects, visual novel-style dialogue, scene transitions, and a clear beginning-to-end journey. These elements were essential because they allowed the project’s main concept to be communicated through interaction rather than only through explanation.<br><br>Several “should-have” features were also completed or partly completed. The game includes a functional user interface, encounter triggers, sound handling, and a mini-game in the form of the rigged card game. These helped improve the player experience and reinforced the theme of limited agency. However, some areas were simplified compared to the original plan. For example, the visual style and character models were not as developed as I first intended, especially for encounters two and three, because I did not have enough time to model all the characters myself.<br><br>Some “could-have” features were cut from the final project. These included extra random encounters, additional mini-games, the rat encounter, and the bullet hell parody planned for the lobster encounter. These were removed because they either required too much development time or started to feel disconnected from the main experience. Cutting them helped the project become more focused on dialogue, obstruction, rerouting, and awkward social interaction.<br><br>Some 'could-have' features were cut from the final project. These included extra random encounters, additional mini-games, the rat encounter, and the bullet hell parody planned for the lobster encounter. These were removed because they either required too much development time or started to feel disconnected from the main experience. Cutting them helped the project become more focused on dialogue, obstruction, rerouting, and awkward social interaction.<br><br>The “wont-have” or lower-priority features helped keep the project realistic. Rather than trying to include every planned idea, I focused on creating a complete and playable experience. This meant the final project was smaller than originally imagined, but more coherent and achievable. Overall, the MoSCoW method helped me make practical decisions and prioritise the features that best supported the project’s concept and final outcome."
+        }
+      ]
+    },
+     {
+      "text": "<mark>Clips from my area.</mark>",
+      "videos": [
+        {
+          "embed": "https://www.youtube.com/embed/AaiUrBIxn9k?si=mqfg0AIarI2EqCYD",
+          "caption": "The raw clips from my presentation video. These are all in my area bow e3 Except for the clips of balfron tower. The difference between the matinence in my part of the area and the private parts of the area speaks for itself."
         }
       ]
     }

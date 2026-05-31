@@ -2,16 +2,34 @@
   "title": "Resources",
   "sections": [
     {
-      "text": "This is my first coding note.",
-      "image": "finimg/example1.png",
-      "alt": "Screenshot of code",
-      "caption": "Experimenting with dialogue logic"
+      "text": "<mark>Engine and Software</mark><br><br>Godot Engine was used as the main game engine for developing the project."
     },
     {
-      "text": "I also tested movement scripts.",
-      "image": "finimg/example2.png",
-      "alt": "Movement test",
-      "caption": "Early movement prototype"
+      "text": "<mark>Fonts</mark><br>Pixel Font Awesome by Somepx — purchased asset, used throughout the game.<br><br>https://somepx.itch.io/pixel-font-awesome<br><br>Balatro Original Paint Background Shader — Used as shader background in the card mini-game<br><br>godotshaders.com/shader/balatro-original-paint-background"
+    },
+    {
+      "text":"<mark>Shader</mark><br>Warped Fractal Noise Shader — used for the start menu background and credits.<br><br>https://godotshaders.com/shader/warped-fractal-noise/"
+    },
+    {
+    "text":"<mark>Music and Sound Effects</mark><br>Start Menu Sound Effect by plasterbrain — used for menu click sound.<br><br>https://freesound.org/people/plasterbrain/sounds/243020/<br><br>Start Menu Music by magmadiverrr — used for start menu background music.<br><br>https://freesound.org/people/magmadiverrr/sounds/661248/<br><br>Start Menu Hover Sound by plasterbrain — used for button hover sound.<br><br>https://freesound.org/people/plasterbrain/sounds/237422/<br><br>Talking Bleep Sound Effect by malakme — used for dialogue sound.<br><br>https://freesound.org/people/malakme/sounds/468927/<br><br>Awkward Sound Effect by plasterbrain — used for awkward dialogue moments.<br><br>https://freesound.org/people/plasterbrain/sounds/395502/<br><br>Music Loop Bundle by Tallbeard — used for background music.<br><br>https://tallbeard.itch.io/music-loop-bundle<br><br>"
+    },
+     {
+    "text":"<mark>Environment Assets</mark><br><br>Buildings by El Bolillo Duro — CC0 1.0 Universal, used for building assets.<br><br>https://elbolilloduro.itch.io/buildings<br><br>Stylized Ground Textures by Kalponic Studio — used for ground and floor textures.<br><br>https://kalponic-studio.itch.io/stylized-ground-textures<br><br>PSX Multi-Section Apartment Building by Kasuga — used as the main building.<br><br>https://kasuga.itch.io/psx-multi-section-apartment-building<br><br>PS1 Style Brownstone Buildings by pepperonijabroni — used as building 2.<br><br>https://pepperonijabroni.itch.io/ps1-style-brownstone-buildings<br><br>PSX Style Barriers by Valse Kamerplant — used for barriers.<br><br>https://valsekamerplant.itch.io/psx-style-barriers<br><br>PSX Style Walls and Fences by Valse Kamerplant — used for additional fences.<br><br>https://valsekamerplant.itch.io/psx-style-walls-fences<br><br>PSX Waste by Daniel Jurys — used for trash assets.<br><br>https://daniel-jurys.itch.io/psx-waste<br><br>"
+    },
+     {
+    "text":"<mark>Props and Vehicles</mark><br><br>PSX Siren — used as siren asset.<br><br>https://sketchfab.com/3d-models/psx-siren-7d90128c3f234db29cf2e5a288d59878<br><br>PSX Style Chain Fence — used as chain fence asset.<br><br>https://sketchfab.com/3d-models/psx-style-chain-fence-57d3e84f276d46c6b4bab1e502d9a4d5<br><br>PSX Shipping Containers 2 — used as shipping containers.<br><br>https://sketchfab.com/3d-models/psx-shipping-containers-2-c4a68cee7a184f15a553a9d53d66f94e<br><br>PSX Passat LS 1978 — used as white car asset.<br><br>https://sketchfab.com/3d-models/psx-passat-ls-1978-f56cc9a3ff76418fb30ece32d063f608<br><br>PSX Tree — used as background tree.<br><br>https://sketchfab.com/3d-models/psx-tree-4028007f24e14160be6deed950789cbe<br><br>Low Poly PSX/PS2 Trash Filled Metal Dumpster — used as dumpster asset.<br><br>https://sketchfab.com/3d-models/low-poly-psxps2-trash-filled-metal-dumpster-7d149495e5004301b518ce3bd4895484<br><br>Cop Car — used as cop car asset.<br><br>https://www.fab.com/listings/9ff39581-d010-4497-acff-872f6f6c3616<br><br>PSX Shopping Cart — used as shopping cart asset.<br><br>https://sketchfab.com/3d-models/psx-shopping-cart-96534b56f0d9487db08f00f1f9301fa1<br><br>Retro Car With Interior - PSX Asset — used as black car asset.<br><br>https://sketchfab.com/3d-models/retro-car-with-interior-psx-asset-free-6d94b353f7b0429d9c6092bd823951ec<br><br>Animated Arrows & Cursors-Used as encounter direction arrow<br><br>spikerman.itch.io/animated-arrows-cursors"
+    },
+     {
+    "text":"<mark>Character Assets</mark><br><br>Characters PSX by El Bolillo Duro — used for police NPCs, firefighter NPC, and background NPCs.<br><br>https://elbolilloduro.itch.io/characters-psx<br><br>PS1 Character with Actions — used for Encounter 1 model.<br><br>https://sketchfab.com/3d-models/ps1-character-with-actions-f6087d44b55f4cb6b3809ad915fab069<br><br>Simple Low Poly Character — used for Encounter 2 model.<br><br>https://sketchfab.com/3d-models/simple-low-poly-character-5ee952af02634ffeab649ab9fba66bfb<br><br>PSX GRAPHICS | Low Poly Woman | Free Download — used for Encounter 3 model.<br><br>https://sketchfab.com/3d-models/psx-graphics-low-poly-woman-free-download-08dea1dcd280451da4a8e621588409a3<br><br>"
+    },
+     {
+    "text":"<mark>Art Assets</mark><br>Background Art<br><br>Procreate:https://procreate.com/<br><br>Character art:<br><br>Pixel Studio:https://store.steampowered.com/app/1204050/Pixel_Studio__pixel_art_editor/"
+    },
+     {
+    "text":"<mark>Game production</mark><br><br>Godot Engine<br><br>https://godotengine.org/<br><br>PICO-8<br><br>https://www.lexaloffle.com/pico-8.php"
+    },
+    {
+      "text":"<mark>Asset resources</mark><br><br>Itch.io<br><br>https://itch.io/game-assets/free/tag-psx<br><br>3D models<br><br>https://sketchfab.com/feed"
     }
   ]
 }

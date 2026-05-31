@@ -2,22 +2,250 @@
   "title": "Assets",
   "sections": [
     {
-      "text": "3D Assets.",
-      "image": "finimg/example1.png",
+      "text": "<mark>3D Assets</mark>",
+      "image": "finimg/sky1.png",
       "alt": "Screenshot of code",
-      "caption": "Experimenting with dialogue logic"
+      "caption": "Making background skyscrapes using simple blender cube and texture mapping"
     },
     {
-      "text": "Character Assets",
-      "image": "finimg/example2.png",
+      "text": "Blender was used to create some of the game’s 3D environmental assets. This was a difficult part of the production process because I had limited experience with 3D modelling, but I was able to create recognisable structures using basic shapes and simple modelling techniques. This suited the stylised visual direction of the project, as the buildings did not need to be highly realistic to communicate the feeling of restricted urban space. However, I quickly realised that modelling detailed encounter characters would be too time-consuming and technically difficult within the project schedule. As a result, I focused my Blender work on environmental forms and used simpler character assets for the encounters. This helped keep the project achievable while still allowing the environment to support the game’s themes of controlled movement and spatial restriction.",
+      "image": "finimg/sky1.png",
       "alt": "Movement test",
-      "caption": "Early movement prototype"
+      "caption": "Final sky scraper"
     },
     {
-      "text": "Background Assets",
-      "image": "finimg/example2.png",
+      "text": "William Hill betting shop recreation",
+      "image": "finimg/willhill.png",
       "alt": "Movement test",
-      "caption": "Early movement prototype"
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/willhill1.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+    {
+      "text": "",
+      "image": "finimg/willhill2.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/willhill3.png",
+      "alt": "Movement test",
+      "caption": "Have you ever wondered why there is more betting shops in poorer areas in the UK?<br><br>Betting shops are often more common in poorer areas because gambling businesses tend to cluster where there is higher footfall, cheaper rents, and greater economic vulnerability. Research has found that the UK’s most deprived areas contain a much higher proportion of gambling premises than the least deprived areas, showing a clear link between deprivation and gambling outlet density. This matters because communities already facing financial pressure are more exposed to businesses that profit from risk, chance, and the hope of quick money. In this context, betting shops can become part of a wider pattern where poorer high streets are offered fewer supportive services and more extractive ones, reinforcing inequality rather than improving local conditions.<br><br>https://www.localgov.co.uk/Poorest-areas-have-most-gambling-premises-study-finds/52822"
+    },
+      {
+      "text": "Blockades used to prevent users escaping the map",
+      "image": "finimg/fence.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/fence1.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/fence2.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/cone.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/cone1.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/cone2.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/block.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+      {
+      "text": "More building background Assets",
+      "image": "finimg/build.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+    {
+      "text": "",
+      "image": "finimg/block1.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/block2.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+      {
+      "text": "Scrapped main building",
+      "image": "finimg/main.png",
+      "alt": "Movement test",
+      "caption": "I originally modelled the main building myself in Blender, which was one of the more time-consuming parts of the production process. I was able to create the full structure and apply textures, but when I exported the model into Godot, the textured materials did not transfer correctly. This meant the building did not appear as intended in the game and would have required additional time to troubleshoot, retexture, and re-export. Although this was frustrating, I decided to write off the model and use a free building asset instead. This was a practical time-management decision, as continuing to fix the model would have taken time away from the core gameplay systems, encounters, and final polish. While I would have preferred to use my own model, replacing it allowed the project to stay achievable and ensured the final game could still be completed to a playable standard."
+    },
+       {
+      "text": "",
+      "image": "finimg/main1.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/main2.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/main3.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/main4.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/main5.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/main6.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/main7.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "",
+      "image": "finimg/main8.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+     {
+      "text": "Character designs:<br><br>Encounter 1",
+      "image": "finimg/ec1chara.png",
+      "alt": "Movement test",
+      "caption": "The background behind this character design is based off the knife crime people. A specific incident where one of them pretended like i had dropped something so i would take my airpods out. I chose a very typicially teen/young adult outfits (bally and a hoodie)."
+    },
+      {
+      "text": "Encounter 2",
+      "image": "finimg/ec2.gif",
+      "alt": "Movement test",
+      "caption": "The lobster man is based of the stereotypical geezer. blonde hair blue eyes, i was trying to go for a crazy eyes look where you cant tell if their insane or on something."
+    },
+      {
+      "text": "Encounter 3",
+      "image": "finimg/ec3char.png",
+      "alt": "Movement test",
+      "caption": "This encounter was based off the chavs in my area. The messy hair and green jacket. To be honest theyre usually quite nice but they talk for talking sake which i wanted to have occur in the game."
+    },
+    {
+      "text": "Concierge",
+      "image": "finimg/con3.gif",
+      "alt": "Movement test",
+      "caption": "There was no specific inspirtation behind the concierge. Slighty based of luxury retailers. I wanted her to have an air of superiorty to her (which i never understood about people in these jobs, are you not just working here?). I made her snooty and have a resting mad face."
+    },
+    {
+      "text": "Concierge part 2",
+      "image": "finimg/happy.gif",
+      "alt": "Movement test",
+      "caption":"The alternate concierge. The easy mode was an idea i had before i had even started development. Its quite literal, when i see people in these positions i always think theyre living life on easy mode, so for the easy mode you play as a normal tennant and are able to just enter and use the lift with no issues."
+    },
+    {
+      "text": "3D mapping in game",
+      "image": "finimg/3d.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+    {
+      "text": "3D models in action",
+      "image": "finimg/3d2.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+    {
+      "text": "",
+      "image": "finimg/3d3.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+    {
+      "text": "",
+      "image": "finimg/3d4.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+    {
+      "text": "",
+      "image": "finimg/3d5.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+    {
+      "text": "",
+      "image": "finimg/3d6.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+    {
+      "text": "",
+      "image": "finimg/3d7.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+    {
+      "text": "",
+      "image": "finimg/3d8.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+    {
+      "text": "",
+      "image": "finimg/3d9.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+    {
+      "text": "",
+      "image": "finimg/3d10.png",
+      "alt": "Movement test",
+      "caption": ""
+    },
+    {
+      "text": "",
+      "image": "finimg/3d11.png",
+      "alt": "Movement test",
+      "caption": ""
     }
   ]
 }

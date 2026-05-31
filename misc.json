@@ -2,16 +2,47 @@
   "title": "Misc",
   "sections": [
     {
-      "text": "Design,Inspiration and planning.",
+      "text": "<mark>Design,Inspiration and planning</mark>",
       "image": "finimg/sh1.jpg",
       "alt": "Screenshot from Silent Hill 2 (2001) on the PS2",
       "caption": "The main stylistic inspiration behind this project was PSX, which refers to the low-poly, pixelated, and blocky 3D aesthetic of early Sony PlayStation games. It is popular in indie game development, particularly horror, for its nostalgia, relatively easy production in software like Blender, and distinctive visual quirks like vertex snapping, wobbly textures, and low-resolution textures "
     },
     {
-      "text": "I also tested movement scripts.",
-      "image": "finimg/example2.png",
+      "text": "<mark>Why poor doors</mark>",
+      "image": "finimg/gardens.jpg",
       "alt": "Movement test",
-      "caption": "Early movement prototype"
-    }
+      "caption": "When i joined UAL i became friends with an interational student and the first time i came to their house i was blown away. Concierge, i had to request access to the lift and watched them call and confirm that i was expected. It was crazy , id never been anywhere so grand and i sure it was very obvious i didnt belong there. I was younger at the time, i think i was maybe 21? and it was my first time witnessing wealth like that. I am not going to lie it did leave a sour taste in my mouth, not necessarily disgust or envy but more so the realisation that people really live like this. In their own little bubble rent higher than what my family probably pays in 3 months. Honestly one of the first things i thought about was the affordable housing tennants..(well besides how much the rent was) because i was aware that there had to be at least a handful by law. It was also in a sense a burst of my own bubble. Obviously i was aware rich people exsisted but its a whole different ball park seeing it for yourself. I was born in Bow,i went to secondary school in Bermondsey and most of my friends where living in bow,peckham,nunhead..so in a sense i was in my own poverty bubble. We all lived in council houses and even the ones whos houses were owned... i mean we were still in bow...and topically enough they only own their houses through right to buy."
+    },
+    {
+      "text": "<mark>Balfron Tower</mark>",
+      "image": "finimg/balfron.jpg",
+      "alt": "Movement test",
+      "caption":"Balfron Tower is a useful reference for this project because its history reflects wider changes in London housing, from post-war public housing to privatisation and gentrification. Designed by Ernő Goldfinger and built between 1965 and 1967, the tower was originally part of the Brownfield Estate in Poplar and provided council housing for local residents.<br><br>It was intended as a modern social housing project, using high-rise design to create homes with shared services and a strong architectural identity. However, its later history shows a shift away from this public housing purpose. In 2007, ownership of Balfron Tower and the wider Brownfield Estate was transferred from Tower Hamlets Council to Poplar HARCA. Refurbishment plans later required residents to move out, and the flats were eventually renovated and sold privately rather than retained as social housing.<br><br>This transition from council estate to private housing makes Balfron Tower relevant to The Long Way Round, as it shows how buildings originally created for working-class housing can become symbols of exclusion, displacement, and changing access to the city<br><br>I also have a long standing hisotry with balfron tower since i was a teenager,As it is in my area.<br><br>When i was younger some time between 2013 and 2016, balfron tower was still empty, the privitisation of the buliding backfired because no one wanted to pay that much to live in a concreate playground. My friends and i use to get inside and run around, we were convinced the bottom floor was haunted because all the doors and windows were.Even back then i thought it was ironic that the greed backfired and they essentially displaced an entire community for now reason. My A-level art focus was on brutalist architecture and the working class."
+    },
+    {
+      "text": "<mark>Brutalist Architecture</mark>",
+      "image": "finimg/brutal.jpg",
+      "alt": "Movement test",
+      "caption":"Brutalist architecture also connects to the visual and thematic direction of the project. Brutalism is often associated with large concrete forms, exposed materials, strong geometric shapes, and post-war public buildings. In housing, this style was linked to ambitious ideas about modern living and collective social provision, but over time many Brutalist estates became associated in public discourse with neglect, poverty, and urban decline.<br><br>Balfron Tower is an important example of this contradiction: architecturally, it is now recognised as a significant Grade II* listed building, but socially, its history is tied to the decline and privatisation of council housing. This tension influenced the project’s interest in buildings as more than background scenery. In The Long Way Round, architecture is treated as a system that directs, restricts, and separates people.<br><br>The use of stark building forms, narrow routes, and controlled access points reflects how urban design can shape social experience and make inequality feel physical."
+    },
+    {
+      "text": "<mark>Transition from Mundane horror to surrealist humour</mark>",
+      "image": "finimg/undertale.png",
+      "alt": "Movement test",
+      "caption":"The Stanley Parable and Undertale were useful references in moving the project away from mundane horror and towards satire. Earlier versions of The Long Way Round focused more on unease, tension, and an unsettling urban atmosphere, but this did not fully communicate the project’s social critique. The Stanley Parable showed how absurd narration, repetition, and restricted choice can make players question control systems through humour rather than fear. Similarly, Undertale uses exaggerated characters, strange dialogue, and unexpected encounters to create moments that are funny, uncomfortable, and meaningful at the same time. These references helped me understand that humour could make the project’s critique more direct and accessible. Instead of trying to frighten the player, the final direction uses awkward comedy, obstruction, and absurd interactions to highlight how irrational and unfair housing inequality can feel when experienced through play."
+    },
+    {
+      "text": "",
+      "image": "finimg/stan.png",
+      "alt": "Movement test",
+      "caption":"The Stanley Parable uses sarcasm and absurdity to make the player question control, choice, and authority within a game. The narrator often presents instructions as if they are logical and reasonable, but the situations quickly become ridiculous when the player follows or resists them. This creates comedy through contradiction: the game acts like the player has freedom, while constantly reminding them that their choices are being shaped by a system. This was relevant to The Long Way Round because I wanted the player to feel a similar tension between agency and control. The humour in my project comes from being told to complete a simple task, reaching the front door, while being repeatedly delayed by unnecessary rules, strange encounters, and unfair restrictions. Like The Stanley Parable, the absurdity makes the lack of control more visible."
+    },
+  {
+      "text": "My final thoughts",
+      "image": "finimg/mydesk.jpg",
+      "alt": "my house 2006",
+      "caption":"At the end of the day, I love my area. I love the chaos, the people, and the familiarity of it. However, the everyday injustice faced by residents is difficult to ignore. I am only 23, yet I could write pages about the ways my community has been repeatedly let down by the council and government. Recently, for example, our buzzer was broken for four months before it was replaced, and even after that, the front door was left permanently unlocked despite being told it would be fixed the following Monday. A month later, it still had not been secured. In another case, we had a leak and damp in the toilet that took three years and 26 visits to resolve. Across the estate, a friend’s block has been without water for six months because the block above them is private and the council were reportedly turned away. These situations may sound extreme, but they are part of a wider pattern of neglect. When problems happen this often, residents begin to accept them as normal. This project comes from questioning that acceptance: why are working-class communities expected to tolerate less care, slower responses, and worse conditions in the places they call home?"
+  }
   ]
+
 }

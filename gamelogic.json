@@ -84,7 +84,7 @@
         {
           "src": "finimg/intro1.png",
           "alt": "Movement test",
-          "caption": "The intro scene is based on Embassy Gardens. Before designing the final background, I used a stock image of the area as a stand-in during development.<br><br>This is where the visual novel style comes into play. I chose a minimal text box design, loosely inspired by Undertale, featuring a classic black-and-white aesthetic for clarity and readability."
+          "caption": "The intro scene is based on Embassy Gardens. Before designing the final background, I used a stock image of the area as a stand-in during development.The Embassy Gardens building was actually a massive inspiration behind the project (which i go into more detail in the misc part of the blog).<br><br>This is where the visual novel style comes into play. I chose a minimal text box design, loosely inspired by Undertale, featuring a classic black-and-white aesthetic for clarity and readability."
         }
       ]
     },
@@ -109,12 +109,12 @@
     {
       "src": "finimg/intro.jpg",
       "alt": "Movement test",
-      "caption": "Final Opening Scene."
+      "caption": "Outside background sketch."
     },
       {
       "src": "finimg/intro2.png",
       "alt": "Movement test",
-      "caption": "Final Opening Scene."
+      "caption": "In game presentation."
     }
   ]
 },
@@ -130,6 +130,10 @@
     {
       "text": "Dialouge Sound",
       "url": "https://freesound.org/people/malakme/sounds/468927/"
+    },
+    {
+      "text": "Background Music",
+      "url": "https://tallbeard.itch.io/music-loop-bundle"
     }
   ]
 },
@@ -230,6 +234,10 @@
     {
       "text": "Awkward sound effect",
       "url": "https://freesound.org/people/plasterbrain/sounds/395502/ "
+    },
+     {
+      "text": "Background Music",
+      "url": "https://tallbeard.itch.io/music-loop-bundle"
     }
   ]
 },
@@ -239,27 +247,38 @@
         {
           "src": "finimg/ec14.png",
           "alt": "Menu sketch",
-          "caption": "Encounter 1 first presentation"
+          "caption": "Similarly to The last 2 scenes a stand in photo was used to get a better feel of the game presentation. The background is a photo i took of a building entrance in my area."
         },
         {
           "src": "finimg/ec1bg.jpeg",
           "alt": "Menu sketch",
-          "caption": "Background Sketch"
+          "caption": "Background Sketch, again drawn by Calix. I want a typical high street feel to the drawing. Loosely based off dalston junction (pre-gentrification)"
+        },
+        {
+          "src": "finimg/scrapped1.png",
+          "alt": "Menu sketch",
+          "caption":"Scrapped Background options:<br>At first i was unsure whether i would use real photos as the backgrounds for stylistic purposes. However once i recieved the first backgrounds and trialed them i realised that drawn backgrounds made the game appear alot more polished."
+
         },
         {
           "src": "finimg/ec1.png",
           "alt": "Menu sketch",
           "caption": "Final Encounter 1 presentation"
         },
+         {
+          "src": "finimg/ec1chara.png",
+          "alt": "Menu sketch",
+          "caption": "Character"
+        },
         {
           "src": "finimg/ec1demo.png",
           "alt": "Menu sketch",
-          "caption": "Encounter 1 logic demo"
+          "caption": "Encounter 1 structure draft.The first encounter is inspired by the knife crime chairty people who wait outside the various london stations.<br><br>Whenever i have the displeasure of being stopped by someone from the organisation it personally feels like there is a hidden skill check / dialouge check i have to pass to escape the interaction.<br><br>The idea behind the card game mini game is based off the pre-talking that they do before they launch into their charity speech. You know theyre wasting your time and they know theyre setting up the stage for the inevitable.<br><br>This is where the concept of the rigged card game comes in. It is also an allagory for working class expierence, you get roped into having hope that if you do things 'properly' it will work out. When in reality its rigged against you from the beginning."
         },
           {
           "src": "finimg/ec1demo2.png",
           "alt": "Menu sketch",
-          "caption": "Encounter 1 logic demo"
+          "caption": "Card game layout sketch"
         }
       ]
     },
@@ -289,24 +308,512 @@
   ]
     },
     {
+  "text": "<mark>Encounter 1 Video</mark>",
+  "videos": [
+    {
+      "embed": "https://www.youtube.com/embed/IKIdXswV3OM?si=0fI3uxN8i-kqGVeI",
+      "caption": ""
+    }
+  ],
+  "links": [
+    {
+      "text": "Dialouge Sound",
+      "url": "https://freesound.org/people/malakme/sounds/468927/"
+    },
+     {
+      "text": "Background Music",
+      "url": "https://tallbeard.itch.io/music-loop-bundle"
+    }
+  ]
+},
+    {
       "text": "<mark>Card mini game</mark>",
       "images": [
         {
           "src": "finimg/card.png",
           "alt": "Menu sketch",
-          "caption": "Encounter 1 first presentation"
+          "caption": ""
         },
         {
           "src": "finimg/card2.png",
           "alt": "Menu sketch",
-          "caption": "Background Sketch"
+          "caption": "Initial simple card game layout.Used for debugging and making sure all aspects of the card game functioned correctly. Such as the cards popping up when hovered over, and double checking all input interactions functioned."
         },
            {
           "src": "finimg/card3.png",
           "alt": "Menu sketch",
-          "caption": "Background Sketch"
+          "caption": ""
+        },
+         {
+          "src": "finimg/card4.png",
+          "alt": "Menu sketch",
+          "caption": ""
+        },
+         {
+          "src": "finimg/card5.png",
+          "alt": "Menu sketch",
+          "caption": "3 iterations of the final card game presentation, each with slight visual tweaks. I had initially planned to have the 7 card displayed for clarity (as the player had to pick a random card and guess if its value was higher or lower than 7). In the end this extra visual piece was removed as the stage size was limited and the extra card felt like it was overcrowding the stage. Instead the instructions and dialouge were put in its place.<br><br> I used a simple shader as a background because i felt like anything too intricate wouldnt fit and also for simplicity."
         }
       ]
-      }
+      },
+      {
+  "text": "<mark>Card game code breakdown</mark>",
+  "images": [
+    {
+      "src": "finimg/cardcode.png",
+      "alt": "Movement test",
+      "caption": "This section sets up the card mini-game and prepares all the elements needed for interaction. The script extends a Control node, meaning it manages the user interface for the game. Several UI elements are referenced at the start, including the base card, a set of selectable cards, a reveal card, and a sound effect for hovering.<br><br>Variables are used to track the current game state, such as the selected card, the number of losses, and whether the player is waiting to continue. A small set of dialogue lines is also included to respond to repeated losses, adding personality to the encounter.<br><br>The ready function initialises the scene by making the mouse visible, enabling formatted text on the result label, and storing the original positions of each card. This allows cards to return to their default position after being hovered over. It also sets up the card visuals, connects button inputs for higher and lower choices, and begins the first round of the game.<br><br>"
+    },
+    {
+      "src": "finimg/cardcode2.png",
+      "alt": "Movement test",
+      "caption": "This section sets up the game board and prepares each round of the card mini-game. The setup function assigns the base card and sets all selectable cards to show their back, ensuring the player cannot see their values at the start. It also hides the reveal card, which will later display the chosen result.<br><br>The connect function links each card to its interactions, allowing the player to click, hover over, and move away from cards. This enables both selection and visual feedback through movement or sound.<br><br>The start round function resets the game state for a new turn. It clears any previous selection, updates the instruction text, disables the higher and lower buttons until a card is chosen, and resets all cards to their original positions and appearance.<br><br>The card selection function records which card the player chooses and resets the positions of all cards, preparing for the next step of the interaction."
+    },
+    {
+      "src": "finimg/cardcode3.png",
+      "alt": "Movement test",
+      "caption": "This section handles what happens after the player selects a card. The chosen card is slightly raised to give visual feedback, and the higher and lower buttons are enabled so the player can make their guess. The instruction text is also updated to guide the player on what to do next.<br><br>The higher and lower button functions simply pass the player’s choice into the main logic function. The resolve function then processes the outcome. It first checks that a card has been selected, then determines the result using a rigged system and increases the loss counter. The buttons are disabled again and all cards are locked to prevent further input.<br><br>Finally, the selected card is revealed by changing its texture, and a line of dialogue is prepared based on how many times the player has lost, adding a narrative response to the outcome."
+    },
+     {
+      "src": "finimg/cardcode4.png",
+      "alt": "Movement test",
+      "caption": "This section displays the result of the player’s guess. If the result label supports formatted text, the message is shown with coloured styling. It tells the player what they guessed, what card was revealed, and confirms that they lost, followed by a short NPC response. If formatted text is not available, the same information is displayed as plain text.<br><br>After the result appears, a continue hint is shown and the game waits for the player to press space. The rigged card function ensures the player always loses by revealing a lower card when they guess higher, or a higher card when they guess lower. The input function then listens for the continue action and moves the game to the next step once the player presses the key."
+    },
+    {
+      "src": "finimg/cardcode5.png",
+      "alt": "Movement test",
+      "caption": "This function handles the hover effect for the cards. When the player moves the cursor away from a card, it smoothly returns to its original position. The function first checks whether the game is waiting for the player to continue or if the card is currently selected, and if either is true, it prevents any movement.<br><br>If the card can be moved, a tween is created to animate the transition back to its original position. This creates a smooth and responsive visual effect, improving the overall feel of interaction with the cards."
+        }
+  ]
+},
+{
+"links": [
+     {
+      "text": "Background Music",
+      "url": "https://tallbeard.itch.io/music-loop-bundle"
+    },
+      {
+          "text": "Hover sound effect",
+          "url": "https://freesound.org/people/plasterbrain/sounds/237422/ "
+        }
+  ] 
+},
+{
+  "text": "<mark>Card game Video</mark>",
+  "videos": [
+    {
+      "embed": "https://www.youtube.com/embed/IKIdXswV3OM?si=0fI3uxN8i-kqGVeI&amp;start=20",
+      "caption": ""
+    }
+  ]
+},
+{
+  "text": "<mark>Encounter 1 3D</mark>",
+  "images": [
+    {
+      "src": "finimg/ec13d1.png",
+      "alt": "Movement test",
+      "caption": "first 3d model used for ec1. This model was taken from a bundle of psx characters by elbolilloduro on itch.io, whos 3d resources are used consistently. At this point of production i had fully intended to 3D model my own characters (which did not happen) so this was just a stand in so i could figure out how the player was going to activate the encounters."
+    },
+    {
+      "src": "finimg/ec13d2.png",
+      "alt": "Movement test",
+      "caption": "ec1 demo in game"
+    },
+    {
+      "src": "finimg/ec13d3.png",
+      "alt": "Movement test",
+      "caption": "first 3d model used for ec1"
+    },
+    {
+      "src": "finimg/ec13d5.png",
+      "alt": "Movement test",
+      "caption": "final 3d model used, better matched the outfit the character wears in the 2d scenes"
+    },
+    {
+      "src": "finimg/ec13d4.png",
+      "alt": "Movement test",
+      "caption": "3D model in game"
+    },
+    {
+      "src": "finimg/ec13d6.png",
+      "alt": "Movement test",
+      "caption": "Had alot of issues with getting the animations to work,for some reason the model started clipping into itself. I ended up fixing it by reimporting the entire scene."
+    },
+    {
+      "src": "finimg/ec13d7.png",
+      "alt": "Movement test",
+      "caption": "Area 3D implemented for collision physics"
+    }
+  ]
+},
+{
+  "text": "<mark>Encounter 1 3D Code Breakdown</mark>",
+  "images": [
+    {
+      "src": "finimg/area3d1code1.png",
+      "alt": "Code breakdown",
+      "caption": "This code was used as an early interaction trigger for an encounter scene within the walking simulator section of the project. It is attached to an Area3D node and contains an exported scene path, allowing the target encounter scene to be changed directly from the Inspector without rewriting the script. The script also includes an optional hint path, which can be assigned to a UI prompt and made visible when the scene begins.<br><br>During development, the interaction was triggered through the interact input action, which printed a debug message before changing scenes using the SceneTransition system. This made it useful for quickly testing whether encounter transitions were working correctly. However, because the script checks for input every frame rather than confirming whether the player is inside the Area3D, it functions more as a forced interaction test than a final proximity-based trigger. This helped identify the need for more controlled encounter activation later in development."
+    }
+  ],
+  "links": [
+    {
+      "text": "Dialogue Sound",
+      "url": "https://freesound.org/people/malakme/sounds/468927/"
+    },
+    {
+      "text": "Background Music",
+      "url": "https://tallbeard.itch.io/music-loop-bundle"
+    },
+      {
+      "text": "Encounter Model",
+      "url": "https://sketchfab.com/3d-models/ps1-character-with-actions-f6087d44b55f4cb6b3809ad915fab069"
+    }
+  ]
+},
+{
+  "text": "<mark>Encounter 2</mark>",
+  "images": [
+    {
+      "src": "finimg/ec21.png",
+      "alt": "Menu sketch",
+      "caption": "Encounter 2 first presentation"
+    },
+     {
+      "src": "finimg/scrapped2.png",
+      "alt": "Menu sketch",
+      "caption": "Encounter 2 Scrapped character, inspired by cartoon head from the BBC show Ideal, i felt like it was slightly too random and inpersonal so it was replaced with the lobster man.<br>The 'RAT KING' character is referenced in the final grafetti background for encounter 2"
+    },
+     {
+      "src": "finimg/ideal.jpg",
+      "alt": "Menu sketch",
+      "caption": "Cartoon Head "
+    },
+    {
+      "src": "finimg/ec2bg.jpg",
+      "alt": "Menu sketch",
+      "caption": "Final EC2 background "
+    },
+    {
+      "src": "finimg/ec2plan.png",
+      "alt": "Menu sketch",
+      "caption": "ec2 plan"
+    },
+    {
+      "src": "finimg/ec2.gif",
+      "alt": "Menu sketch",
+      "caption": "ec2 Lobster npc"
+    },
+    {
+      "src": "finimg/ec22.png",
+      "alt": "Menu sketch",
+      "caption": "Final presentation"
+    },
+      {
+      "src": "finimg/ec2bottle.png",
+      "alt": "Menu sketch",
+      "caption": "Final presentation"
+    },
+      {
+      "src": "finimg/ec23.png",
+      "alt": "Menu sketch",
+      "caption": "Final presentation"
+    },
+       {
+      "src": "finimg/ec23d1.png",
+      "alt": "Menu sketch",
+      "caption": "3d first presentation"
+    }
+  ]
+},
+{
+  "text": "<mark>Code Breakdown</mark>",
+  "images": [
+    {
+      "src": "finimg/ec2code1.png",
+      "alt": "Code breakdown",
+      "caption": "This part of the code stores the encounter’s dialogue in an array, with each line written as a dictionary containing a type and text. The type identifies whether the line is spoken by the player, the NPC, or used as description, which later allows the script to style or colour the text differently. The dialogue plays in order using dialogue_index, creating a linear visual novel-style conversation. One line also includes 'show_bottle': true, which acts as a trigger to show the bottle image during that moment in the scene."
+    },
+        {
+      "src": "finimg/ec2code2.png",
+      "alt": "Code breakdown",
+      "caption": "This section sets up the variables and scene references needed for the dialogue encounter to work. dialogue_index tracks which line is currently being shown, while is_typing, full_text, current_text, current_color, and typing_speed control the typewriter text effect and its appearance. npc_has_left is used later to make sure the NPC stays hidden after walking away. The exported eyes_open and eyes_closed textures allow blinking images to be assigned in the Inspector, while the @onready variables connect the script to important scene nodes such as the portrait, blink timer, and bottle image. In _ready(), the mouse is made visible, the dialogue UI is prepared, the bottle is hidden, the portrait is set to the open-eyes texture, the blink timer is started with a random delay, and the first dialogue line begins."
+    },
+          {
+      "src": "finimg/ec2code3.png",
+      "alt": "Code breakdown",
+      "caption": "This function displays the current dialogue line. It gets the line using dialogue_index, then checks the line’s type to choose the correct text colour for description, player, or NPC dialogue. It stores the line’s text in full_text, clears the current text, and turns on is_typing so the typewriter effect can begin. The dialogue label is cleared, the hint is hidden, and the hint text is updated for keyboard/controller input. The function also checks whether the current line has 'show_bottle': true; if so, it shows the bottle image, otherwise it shows the normal portrait. If the NPC has already left, both the portrait and bottle are hidden. Finally, the dialogue sound is restarted so it plays while the new line is being typed."
+    },
+          {
+      "src": "finimg/ec2code4.png",
+      "alt": "Code breakdown",
+      "caption": "This section handles special visual events and the typewriter effect. If the current line says He walks away sideways like a crab, the script calls walk_away() to animate the NPC leaving the scene. It then starts type_text(), which gradually displays the dialogue one character at a time. The show_bottle() and hide_bottle() functions control whether the bottle image or NPC portrait is visible. They also check npc_has_left, so once the NPC has walked away, both the portrait and bottle remain hidden. In type_text(), the loop begins typing through full_text, but if typing is interrupted, the dialogue sound stops and the function exits."
+    },
+             {
+      "src": "finimg/ec2code5.png",
+      "alt": "Code breakdown",
+      "caption": "This section continues the typewriter effect by adding one character from full_text into current_text, clearing the dialogue label, and then displaying the updated text with the correct colour formatting. The timer creates a short delay between each character, which controls the typing speed. Once the full line has finished typing, is_typing is set to false, the continue hint becomes visible, and the dialogue sound stops. The walk_away() function controls the NPC leaving the scene. It first checks that the portrait is visible, then sets npc_has_left to true so the character stays gone afterwards. A tween is then created to move the portrait sideways while also shifting it slightly up and down, creating the effect of the character walking away sideways."
+    },
+            {
+      "src": "finimg/ec2code6.png",
+      "alt": "Code breakdown",
+      "caption": "This section completes the NPC walking animation by adding several delayed tween movements on the portrait’s Y position. The portrait moves slightly up and down while also moving sideways, creating a wobbling motion that makes the exit feel more like a crab walk rather than a simple slide. Each delayed tween changes the vertical position at a different moment, producing a repeated bouncing effect. Once the tween finishes, the callback runs and hides both the portrait and the bottle image, making sure the NPC and prop are no longer visible after the character has left the scene."
+    },
+            {
+      "src": "finimg/ec2code7.png",
+      "alt": "Code breakdown",
+      "caption": "This section controls how the player moves through the dialogue and exits the encounter. The advance_dialogue() function increases dialogue_index by one, moving to the next line if there are still lines left in the dialogue array. If the dialogue has finished, it stops the dialogue sound, sets GlobalData.returning_from_encounter to true so the main scene knows the player is returning from an encounter, and then changes back to mainfinal.tscn. The _unhandled_input() function checks whether the player has pressed continue using ui_accept or the left mouse button. If text is still typing, the input skips the typewriter effect and instantly displays the full line, shows the hint, and stops the sound. If the line has already finished, the same input advances to the next dialogue line."
+    },
+    {
+      "src":"finimg/ec2code8.png",
+      "alt": "Code breakdown",
+      "caption":"This section controls the blinking animation for the NPC portrait. When the timer finishes, _on_timer_timeout() calls the blink() function. The function first checks that both eye textures exist and that the portrait is currently visible; if not, it stops to prevent errors or blinking while the NPC is hidden. It then briefly changes the portrait texture to the closed-eyes version, waits for 0.1 seconds, and changes it back to the open-eyes version. Finally, the timer is given a new random wait time between 1.5 and 4 seconds before starting again, making the blinking feel more natural instead of happening at fixed intervals."
+    }
+  ]
+},
+{
+"images": [
+  {
+    "src": "finimg/ec23d2.png",
+    "alt": "",
+    "caption": "Final ec2 3D"
+  },
+    {
+    "src": "finimg/ec23d3.png",
+    "alt": "",
+    "caption": "Area 3D"
+  },
+  {
+    "src": "finimg/ec23darea.png",
+    "alt": "",
+    "caption": "This script is attached to an Area3D and is used to move the player into encounter_2.tscn. The exported next_scene variable stores the scene path, making it easy to change the target scene from the Inspector. The hint_path variable allows a hint UI element to be assigned, and in _ready() the script checks whether a hint has been provided; if it has, it gets that node and makes it visible. In _process(), the script constantly checks whether the input action interact_a has just been pressed. When it is pressed, the game uses SceneTransition.change_scene(next_scene) to load the encounter scene. This version works as a direct interaction trigger, but it does not check whether the player is inside the Area3D, so pressing the input can activate the transition from anywhere unless additional range-checking logic is added."
+  }
+]
+},
+{
+"links": [
+  {
+      "text": "Dialouge Sound",
+      "url": "https://freesound.org/people/malakme/sounds/468927/"
+    },
+     {
+      "text": "Background Music",
+      "url": "https://tallbeard.itch.io/music-loop-bundle"
+    },
+     {
+      "text": "Encounter Model",
+      "url": "https://sketchfab.com/3d-models/ps1-character-with-actions-f6087d44b55f4cb6b3809ad915fab069"
+    }
+  ]
+},
+{
+  "text": "<mark>Encounter 3</mark>",
+  "images": [
+    {
+      "src": "finimg/ec31.png",
+      "alt": "Code breakdown",
+      "caption": "Encounter 3 presentation, I reused the same background from encounter 1 as i think it fit the vibe well."
+    },
+    {
+      "src": "finimg/ec3char.png",
+      "alt": "Code breakdown",
+      "caption": "Encounter 3 character.Her design is based off the shadey indivduals you see out and about in london."
+    },
+     {
+      "src": "finimg/ec3d.png",
+      "alt": "Code breakdown",
+      "caption": "First Encounter 3 3D presentation"
+    },
+     {
+      "src": "finimg/ec3cig.png",
+      "alt": "Code breakdown",
+      "caption": "Cigs the encounter presents you."
+    },
+      {
+      "src": "finimg/ec3d1.png",
+      "alt": "Code breakdown",
+      "caption": "Final 3d presentation"
+    },
+    {
+      "src": "finimg/ec3d2.png",
+      "alt": "Code breakdown",
+      "caption": "Area 3D "
+    },
+     {
+      "src": "finimg/ec3d3.png",
+      "alt": "Code breakdown",
+      "caption": "More in game 3D screenshots"
+    }
+  ]
+},
+{
+  "text": "<mark>Code Breakdown</mark>",
+  "images": [
+    {
+      "src": "finimg/ec3c1.png",
+      "alt": "Code breakdown",
+      "caption": "This section sets up the dialogue for another visual novel-style encounter. The dialogue array separates narration, NPC speech, and player responses, making it easier to style each type differently. One line includes show_cigs, which is used later to display the cigarette image during the scene.<br><br>The remaining variables control the typewriter effect, text colour, and dialogue progress. The NPC sprite and cigarette image are stored so they can be shown or hidden during the encounter."
+    },
+    {
+      "src":"finimg/ec3c2.png",
+      "alt":"Code breakdown",
+      "caption":"This section prepares the encounter when the scene starts. It makes the mouse visible, shows the dialogue box, hides the hint and cigarette image, and keeps the NPC sprite visible. It also enables formatted text so the dialogue can use different colours.<br><br>The show_dialogue_line function loads the current dialogue line, chooses a colour based on whether it is narration, player dialogue, or NPC speech, then prepares the typewriter effect. It clears the previous text, hides the hint, and updates the continue prompt."
+    },
+     {
+      "src":"finimg/ec3c3.png",
+      "alt":"Code breakdown",
+      "caption":"This section checks whether the current dialogue line should display the cigarette image. If show_cigs is active, the cigarette image appears and the NPC sprite is hidden. If not, the cigarette image is hidden and the NPC sprite returns.<br><br>The dialogue sound is restarted for each new line, then the typewriter effect begins. The set_dialogue_text function updates the label with the correct colour, while type_text starts revealing the line character by character."
+  },
+   {
+      "src":"finimg/ec3c4.png",
+      "alt":"Code breakdown",
+      "caption":"This section continues the typewriter effect by adding each character to the visible text and updating the dialogue label. A short delay between each character creates the typing animation. Once the full line is shown, typing stops, the hint becomes visible, and the dialogue sound is stopped.<br><br>The advance_dialogue function moves to the next line. If more dialogue remains, it displays the next line. If the encounter is finished, it stops the sound, marks the player as returning from an encounter, and changes back to the main scene."
+   },
+   {
+      "src":"finimg/ec3c5.png",
+      "alt":"Code breakdown",
+      "caption":"This section handles player input during the dialogue. It checks whether the player has pressed the continue button or clicked the mouse. If no valid input is detected, nothing happens.<br><br>If the text is still typing, the input skips the typewriter effect and instantly displays the full line. The hint is then shown and the dialogue sound stops. If the line has already finished, the same input advances the dialogue to the next line."
+   },
+   {
+    "src":"finimg/ec33d.png",
+    "alt":"Code breakdown",
+    "caption":"This script controls a 3D encounter trigger area. It extends an Area3D node, meaning it detects when another body, such as the player, enters its space. The exported encounter scene path allows the linked encounter scene to be changed easily in the editor.<br>The triggered variable prevents the encounter from activating more than once. The arrow is used as a visual indicator to show the player where the encounter is. When the scene starts, the script connects the body entered signal and checks whether this encounter has already been completed. If it has, the arrow is hidden. If not, the arrow remains visible.<br>When the player enters the area, the script checks that the encounter has not already been triggered or completed. It then hides the arrow, saves the player’s current position and rotation, marks the encounter as completed, and changes to the encounter scene. This allows the game to return the player to the correct location afterwards."
+   }
+  ],
+  "links": [
+    {
+      "text": "Dialouge Sound",
+      "url": "https://freesound.org/people/malakme/sounds/468927/"
+    },
+     {
+      "text": "Background Music",
+      "url": "https://tallbeard.itch.io/music-loop-bundle"
+    },
+     {
+      "text": "Encounter Model",
+      "url": "https://sketchfab.com/3d-models/psx-graphics-low-poly-woman-free-download-08dea1dcd280451da4a8e621588409a3"
+    }
+  ]
+},
+{
+  "text": "<mark>Adding map markers</mark>",
+  "images": [
+    {
+      "src": "finimg/ecglow.png",
+      "alt": "Code breakdown",
+      "caption": "Based on player feedback, I was advised to make the encounter points more noticeable by adding a glow effect and a clearer visual indicator. I tested a few different colours to see which worked best. Blue matched the overall map palette, but blended into the environment too much. Red was very visible, but felt more ominous than intended. I eventually chose yellow, as it stood out clearly while still feeling neutral and approachable."
+    },
+      {
+      "src": "finimg/ecarrow.png",
+      "alt": "Code breakdown",
+      "caption":""
+      },
+       {
+      "src": "finimg/ecarrow2.png",
+      "alt": "Code breakdown",
+      "caption":"I also added floating animated arrows above the encounter points to make them easier for players to identify. This gives the player a clearer sense of direction and reduces confusion about where they are supposed to go next. The movement of the arrows helps draw attention without needing extra text instructions, making the encounters feel more naturally integrated into the environment."
+      },
+       {
+      "src": "finimg/ecarrow3.png",
+      "alt": "Code breakdown",
+      "caption":"Additional red directional arrows were added so that there is obvious indication for players to know where to go."
+       },
+       {
+        "src":"finimg/ec3333.png",
+        "alt":"Code breakdown",
+        "caption":"Another issue I needed to address was directional sensitivity, particularly in relation to the Area3D trigger zones. The player’s turning was initially too broad, which meant that after spawning outside the front door, they could accidentally trigger Encounter 1 simply by turning around. To fix this, I moved the Encounter 1 Area3D trigger box further back and slightly reduced the mouse and controller sensitivity. This made the interaction feel more controlled and helped prevent players from unintentionally activating the encounter."
+       }
+  ]
+},
+{
+  "text": "<mark>Poor Door</mark>",
+  "images": [
+    {
+      "src": "finimg/frontdoorbg.jpg",
+      "alt": "Code breakdown",
+      "caption": "The poor door entrance uses the same base structure as the nicer main entrance, but it is presented as more neglected and less cared for. This was intentional, as I wanted to highlight how unequal treatment is not always shown through completely separate spaces, but through differences in maintenance, attention, and presentation. By making the poorer entrance feel less polished, the design reflects how working-class residents can be given access that technically functions, but feels secondary, overlooked, or deliberately lower in quality."
+    },
+     {
+      "src": "finimg/frontdoor.png",
+      "alt": "Code breakdown",
+      "caption": ""
+    },
+      {
+      "src": "finimg/frontdoor1.png",
+      "alt": "Code breakdown",
+      "caption": ""
+    }
+  ]
+},
+{
+  "text": "<mark>Lift Scene</mark>",
+  "images": [
+    {
+      "src": "finimg/lift.png",
+      "alt": "Code breakdown",
+      "caption": "Lift background"
+    },
+     {
+      "src": "finimg/lift2.png",
+      "alt": "Code breakdown",
+      "caption": "Lift background reference image"
+    },
+     {
+      "src": "finimg/lift3.png",
+      "alt": "Code breakdown",
+      "caption": "The final lift presentation reinforces the project’s use of frustration and inconvenience. After being redirected through the building and forced to take the longer route, the player finally reaches the lift, only to discover that it is broken. This reflects a familiar lack of care and maintenance in shared housing spaces, where basic access is technically provided but not properly supported. The broken lift becomes a final joke, but also a final criticism: even after following the rules and taking the route assigned to them, the player is still obstructed. It adds to the feeling that the system is not designed with their comfort, time, or access in mind."
+    }
+  ]
+},
+{
+  "text": "<mark>Front Door Scene</mark>",
+  "images": [
+    {
+      "src": "finimg/door.png",
+      "alt": "Code breakdown",
+      "caption": "Door background"
+    },
+     {
+      "src": "finimg/door2.png",
+      "alt": "Code breakdown",
+      "caption": "Final door background"
+    }
+  ]
+},
+{
+  "text": "<mark>Credits Scene</mark>",
+  "images": [
+    {
+      "src": "finimg/credits.png",
+      "alt": "Code breakdown",
+      "caption": "Door background"
+    },
+     {
+      "src": "finimg/credits2.png",
+      "alt": "Code breakdown",
+      "caption": "Final door background"
+    }
+  ]
+},
+{
+  "text": "<mark>Easy Mode</mark>",
+  "images": [
+    {
+      "src": "finimg/easy.png",
+      "alt": "Code breakdown",
+      "caption": "Door background, I added a bunch of random poster because i feel like every council flat has a million flyers."
+    },
+     {
+      "src": "finimg/easy1.png",
+      "alt": "Code breakdown",
+      "caption": "Final door background"
+    },
+      {
+      "src": "finimg/easy2.png",
+      "alt": "Code breakdown",
+      "caption": "Final door background"
+    }
+  ]
+}
   ]
 }
